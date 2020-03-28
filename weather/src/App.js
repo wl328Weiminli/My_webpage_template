@@ -5,9 +5,16 @@ import WeatherCard from "./components/WeatherCard/component";
 function App() {
   return (
     <div className="App">
-      <WeatherCard temp="30" />
-      <WeatherCard temp="10" />
-      <WeatherCard temp="40" />
+      <div className="weatherCard">
+        <WeatherCard temp={30} condition="Clear" city="Sydney" country="AU" />
+        <WeatherCard temp={5} condition="Rain" city="China" country="CHN" />
+        <WeatherCard
+          temp={-20}
+          condition="Tornado"
+          city="Melbourne"
+          country="AU"
+        />
+      </div>
     </div>
   );
 }

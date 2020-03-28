@@ -1,6 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Fira+Sans|Merriweather&display=swap");
 
 .App {
-  margin: 0 auto;
+  /* margin: 0 auto; */
   color: white;
+  display: grid;
+  grid-gap: 20px;
+}
+
+.weatherCard {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-gap: 100px;
+  justify-content: center;
 }
